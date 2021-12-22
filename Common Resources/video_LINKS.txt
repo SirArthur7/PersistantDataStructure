@@ -1,0 +1,29 @@
+1. MIT lecture for pointer machine:
+https://www.youtube.com/watch?v=T0yzrZL1py0
+
+2. For Amortized Analysis ( I think it should be viewed after seeing 1. ) 
+https://www.youtube.com/watch?v=EU09CpPUrZc
+https://www.youtube.com/watch?v=3MpzavN3Mco
+https://www.youtube.com/watch?v=d605guaOH3A&t=131s
+
+
+NOTE : 3 TO 5 are DONE IN PATH COPYING FASHION ( NOT POINTER MACHINE)
+
+3. Persistent Queue And Segment Tree (Seg Tree part may be omitted if anyone has not done seg tree separately): 
+
+https://www.youtube.com/watch?v=m3uEG4NgJx8
+
+4. Persistent  Segment Tree (May leave it if anyone has not done seg tree separately):: 
+
+https://www.youtube.com/watch?v=mLlaIj_8lv0
+
+
+5. Application:
+
+https://www.youtube.com/watch?v=UcczyTC0wmU
+
+-------------
+
+6. Scapegoat Tree, List Order Maintenance (To Handle versions in O(1)):  ****
+
+https://www.youtube.com/watch?v=ZCTI3zzwrkE
