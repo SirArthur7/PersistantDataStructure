@@ -7,5 +7,3 @@ CM Sir Project
 3. Debasmit Roy
 4. Kushal Das
 5. Anannyo Dey
-6. Testing
-
