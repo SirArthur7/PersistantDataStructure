@@ -32,6 +32,7 @@ struct Mod // modifications log
 
 struct Stack_fp // main stack
 {
+    
     Node *head[MAX_OP];
     int num_el;
     int live_version;
