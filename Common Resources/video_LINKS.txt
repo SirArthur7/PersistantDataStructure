@@ -4,8 +4,8 @@ https://www.youtube.com/watch?v=T0yzrZL1py0
 2. For Amortized Analysis ( I think it should be viewed after seeing 1. ) 
 https://www.youtube.com/watch?v=EU09CpPUrZc
 https://www.youtube.com/watch?v=3MpzavN3Mco
-https://www.youtube.com/watch?v=d605guaOH3A&t=131s
-
+https://www.youtube.com/watch?v=d605guaOH3A&t=131s   ***
+https://www.youtube.com/watch?v=6_BBQWQ2HQQ&t=471s   ***
 
 NOTE : 3 TO 5 are DONE IN PATH COPYING FASHION ( NOT POINTER MACHINE)
 
