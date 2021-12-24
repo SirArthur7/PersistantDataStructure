@@ -1,0 +1,6 @@
+JAVA:
+
+1. Partial persistency: CopyOnWriteArrayList and CopyOnWriteArraySet packages
+2. Full Persistency: N/A
+3. Technique: Copy whole list on modification
+4. Extra Space Requirement: O(n*v); n = number of elements, v = number of versions
