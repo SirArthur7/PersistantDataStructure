@@ -11,6 +11,7 @@ class Main {
 			= new CopyOnWriteArrayList<>();
 
 		// Initial Iterator
+		
 		Iterator <String> itr1 = list.iterator();	// []
 		Iterator <String> itr2 = list.iterator();	// ["Kank", ]
 		Iterator <String> itr3 = list.iterator();	// ["Kank", "Ghos", ]
