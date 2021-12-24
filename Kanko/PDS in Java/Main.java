@@ -19,22 +19,25 @@ class Main {
 		Iterator <String> itr5 = list.iterator();
 
 
-// 		/**
-// 		 * Appends the specified element to the end of this list.
-// 		 *
-// 		 * @param e element to be appended to this list
-// 		 * @return {@code true} (as specified by {@link Collection#add})
-// 		 */
-// 		public boolean add(E e) {
-// 			synchronized (lock) {
-// 				Object[] es = getArray();
-// 				int len = es.length;
-// 				es = Arrays.copyOf(es, len + 1);				//complete copy is created!!!!
-// 				es[len] = e;									//another version!!
-// 				setArray(es);
-// 				return true;
-// 			}
-// 		}
+//File		         java.util.concurrent.CopyOnWriteArrayList.class
+
+
+//L.No. 422 		/**
+//L.No. 423 		 * Appends the specified element to the end of this list.
+//L.No. 424 		 *
+//L.No. 425 		 * @param e element to be appended to this list
+//L.No. 426 		 * @return {@code true} (as specified by {@link Collection#add})
+//L.No. 427 		 */
+//L.No. 428 		public boolean add(E e) {
+//L.No. 429 			synchronized (lock) {
+//L.No. 430				Object[] es = getArray();
+//L.No. 431 				int len = es.length;
+//L.No. 432 				es = Arrays.copyOf(es, len + 1);				//complete copy is created!!!!
+//L.No. 433 				es[len] = e;									//another version!!
+//L.No. 434 				setArray(es);
+//L.No. 435 				return true;
+//L.No. 436 			}
+//L.No. 437 		}
 
 
 		list.add("Kank");
