@@ -45,3 +45,4 @@ Stack_fp *init_stack(); // initializes the stack
 bool isEmpty(Stack_fp *stack, int version);        // check if stack is empty
 bool push(Stack_fp *stack, int data, int version); // push the element in the stack
 int pop(Stack_fp *stack, int version);             // pop and return the value
+void print(Stack_fp *stack, int version); //prints the elements of the stack in a particular version
