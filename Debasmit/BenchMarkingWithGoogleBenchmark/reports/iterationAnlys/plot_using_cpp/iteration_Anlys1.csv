@@ -1,0 +1,7 @@
+BM_IterationOverLL_Wraper/4, 296150, 2306.83,2 291.91, ns, , 1.74527E+06, 4
+BM_IterationOverLL_Wraper/8, 238577, 3104.67, 3063.01, ns, , 2.61181E+06, 8
+BM_IterationOverLL_Wraper/16, 158035, 4577.31, 4513.15, ns, , 3.54519E+06, 16
+BM_IterationOverLL_Wraper/32, 98102, 7333.32, 7283.13, ns, , 4.39371E+06, 32
+BM_IterationOverLL_Wraper/64, 50449, 14333.3, 14251.3, ns, , 4.49083E+06, 64
+BM_IterationOverLL_Wraper/128, 24538, 28662.4, 28547.1, ns, , 4.48382E+06, 128
+BM_IterationOverLL_Wraper/256, 13676, 62085.4, 60476.1, ns, , 4.23308E+06, 256

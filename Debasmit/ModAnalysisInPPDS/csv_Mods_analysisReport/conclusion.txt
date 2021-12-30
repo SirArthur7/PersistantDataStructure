@@ -1,0 +1,6 @@
+So, we can conclude that "increasing number of mods per node structure", hence, creating fat nodes, does not very effecent. According to many studies, the #mods per nodes is kept within (2*inDegree) in 
+partial persistent DS. 
+
+From the 4 plots we can observe that (#mods per node = 3) gives the best results in terms of Auxilary Memory Consumtion.
+
+So, we keep maxModCount = 2 or 3.
