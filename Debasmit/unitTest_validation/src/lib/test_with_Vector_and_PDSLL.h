@@ -15,8 +15,8 @@ class VECT_AND_PDSLL
 public:
     //vector<int>vect(MAX_TEST_SIZE);
     //PPDS_LINKED_LIST<int>list(MAX_MOD_COUNT);
-    const int max_mod = 3;
-    const int max_size = 2000;
+    const int max_mod ;
+    const int max_size ;
     
     VECT_AND_PDSLL(int mm=3,int ms=2000):max_mod(mm),max_size(ms)
     {
