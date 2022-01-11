@@ -43,7 +43,7 @@ void deleteArray(Array *arr){
 }
 
 void init (Array *arr){
-    deleteArray(arr);
+    // deleteArray(arr);
     int n;
     printf("Enter number of values in array\n");
     scanf("%d", &n);
