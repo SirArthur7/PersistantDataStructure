@@ -17,12 +17,11 @@ typedef struct Array{
     arrayNode * list[MAXSIZE];
 } Array;
 
-arrayNode * createValue (int value, int vers, int pre){
+arrayNode * createValue (int value, int vers){
     arrayNode * temp;
     temp = (arrayNode *)malloc(sizeof(arrayNode));
     if(temp == NULL) return temp;
 
-    temp->preVersion = pre;
     temp->val = value;
     temp->version = vers;
     temp->next = NULL;
@@ -30,55 +29,47 @@ arrayNode * createValue (int value, int vers, int pre){
     return temp;
 }
 
-void deleteArray(Array *arr){
-    for(int i = 0; (*arr).list[i] != NULL; i++){
-        // arrayNode * head = arr.list[i];
-        (*arr).list[i] = NULL;
-        // while(head != NULL){
-        //     arrayNode *temp = head;
-        //     head = head->next;
-        //     free(temp);
-        // }
-    }
-}
-
-void init (Array *arr){
-    // deleteArray(arr);
-    int n;
-    printf("Enter number of values in array\n");
-    scanf("%d", &n);
-    int i;
-
-    for(i = 0; i<n; i++){
-        int val;
-        scanf("%d", &val);
-        (*arr).list[i] = createValue(val, 1, 0);
+int init(Array *PersArr, int * arr, int size){
+    for(int i = 0; i<MAXSIZE; i++){
+        if(i<size){
+            arrayNode * temp = createValue(arr[i], 1);
+            (*PersArr).list[i] = temp;
+        } else if(i == size){
+            arrayNode * temp = createValue(SENTINEL, 1);
+            (*PersArr).list[i] = temp;
+        } else {
+            (*PersArr).list[i] = NULL;
+        } 
     }
 
-    (*arr).list[i] = createValue(SENTINEL, 1, 0);
-    (*arr).latestVersion = 1;
-    (*arr).versionTrack[1] = 0;
+    (*PersArr).versionTrack[1] = 0;
+    (*PersArr).latestVersion = 1;
+    
+    return 1;
 }
 
-void modify (Array *arr, int version, int pos, int newVal){
+int modify (Array *arr, int version, int pos, int newVal){
     (*arr).latestVersion++;
     (*arr).versionTrack[(*arr).latestVersion] = version;
-    arrayNode * temp = createValue (newVal, (*arr).latestVersion, version);
+
+    arrayNode * temp = createValue (newVal, (*arr).latestVersion);
     temp->next = (*arr).list[pos];
     (*arr).list[pos] = temp;
+
+    return (*arr).latestVersion;
 }
 
 int retrieve(Array arr, int vers, int pos){
     arrayNode * temp = arr.list[pos];
-    while(temp->version > vers){
+    while(temp->version > vers){    //future, relative to the requested version 
         temp = temp->next;
     }
-    while (1==1){
+    while (1==1){                    
         if(temp->version == vers) return temp->val;
         else if (temp->version > vers){
             temp=temp->next;
         }
-        else if (temp->version < vers){
+        else if (temp->version < vers){         //this version is in the past, relative to requested version, so need to see history of requested version
             vers = arr.versionTrack[vers];
         }
     }
@@ -93,38 +84,45 @@ int size(Array arr, int vers){
     return count;   
 }
 
-void deleteElem(Array *arr, int vers, int pos){
-    (*arr).latestVersion ++;
-    (*arr).versionTrack[(*arr).latestVersion] = vers;
-    while(1 == 1){ 
-        int nextVal = retrieve((*arr), vers, pos+1);
-        arrayNode * temp = createValue(nextVal , (*arr).latestVersion, vers);
-        temp->next = (*arr).list[pos];
-        (*arr).list[pos] = temp;
-        if(nextVal == SENTINEL) return;
-        pos ++;
-    }
-}
 
-void insertElem(Array *arr, int vers, int pos, int newVal){
-    (*arr).latestVersion++;
-    (*arr).versionTrack[(*arr).latestVersion] = vers;
-    arrayNode * temp = createValue(newVal , (*arr).latestVersion, vers);
-    temp->next = (*arr).list[pos];
-    (*arr).list[pos] = temp;
-    pos++;
+//extra functions
+//inserting and deleting elements from a particular position
 
-    while(1 == 1){ 
-        int nextVal = retrieve((*arr), vers, pos-1);
-        arrayNode * temp = createValue(nextVal , (*arr).latestVersion, vers);
-        temp->next = (*arr).list[pos];
-        (*arr).list[pos] = temp;
-        if(nextVal == SENTINEL) return;
-        pos ++;
-    }
-}
+
+// void deleteElem(Array *arr, int vers, int pos){
+//     (*arr).latestVersion ++;
+//     (*arr).versionTrack[(*arr).latestVersion] = vers;
+//     while(1 == 1){ 
+//         int nextVal = retrieve((*arr), vers, pos+1);
+//         arrayNode * temp = createValue(nextVal , (*arr).latestVersion, vers);
+//         temp->next = (*arr).list[pos];
+//         (*arr).list[pos] = temp;
+//         if(nextVal == SENTINEL) return;
+//         pos ++;
+//     }
+// }
+
+
+// void insertElem(Array *arr, int vers, int pos, int newVal){
+//     (*arr).latestVersion++;
+//     (*arr).versionTrack[(*arr).latestVersion] = vers;
+//     arrayNode * temp = createValue(newVal , (*arr).latestVersion, vers);
+//     temp->next = (*arr).list[pos];
+//     (*arr).list[pos] = temp;
+//     pos++;
+
+//     while(1 == 1){ 
+//         int nextVal = retrieve((*arr), vers, pos-1);
+//         arrayNode * temp = createValue(nextVal , (*arr).latestVersion, vers);
+//         temp->next = (*arr).list[pos];
+//         (*arr).list[pos] = temp;
+//         if(nextVal == SENTINEL) return;
+//         pos ++;
+//     }
+// }
 
 void displayList(Array arr, int vers){
+    printf("Version %d: ", vers);
     for(int i = 0; ; i++){
         int val = retrieve(arr, vers, i);
         if(val != SENTINEL) printf("%d ", val);
