@@ -27,3 +27,14 @@ https://www.youtube.com/watch?v=UcczyTC0wmU
 6. Scapegoat Tree, List Order Maintenance (To Handle versions in O(1)):  ****
 
 https://www.youtube.com/watch?v=ZCTI3zzwrkE
+
+7. Learn BenchMark and UnitTest:
+
+https://www.youtube.com/watch?v=JfOzsBi_irY  (Bazel)
+https://www.youtube.com/watch?v=9VKR8u9odrA  (G Bench)
+https://www.youtube.com/watch?v=nXaxk27zwlk  (Bench)
+https://www.youtube.com/watch?v=JJqRlSTQlh4  (G Test)
+
+
+
+
