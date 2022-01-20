@@ -21,3 +21,12 @@ cc_binary(
 	"//src/lib:Util",
     ],
 )
+
+cc_binary(
+    name = "ITER_MAIN_KANKO",
+    srcs = ["iteration_main_kanko.cpp"],
+    deps = [
+        "@com_google_benchmark//:benchmark",
+	"//src/lib: Kanko_Array",
+    ],
+)

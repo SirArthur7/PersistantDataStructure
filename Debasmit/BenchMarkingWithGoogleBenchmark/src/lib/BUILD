@@ -18,3 +18,10 @@ cc_library(
     hdrs = ["util.h"],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "Kanko_Array",
+    hdrs = ["Array.h"],
+    visibility = ["//visibility:public"],
+)
+
