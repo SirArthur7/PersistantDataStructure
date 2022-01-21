@@ -1,0 +1,27 @@
+2022-01-21T01:52:24+05:30
+Running ./mybenchmark
+Run on (8 X 1100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 512 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 7.26, 4.73, 3.40
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_ARRAY_Wraper/1",378550,1978.39,1923.14,ns,,519984,"1",,
+"BM_ARRAY_Wraper/2",303874,2486.28,2370.84,ns,,843584,"2",,
+"BM_ARRAY_Wraper/4",291703,2531.24,2453.27,ns,,1.63048e+06,"4",,
+"BM_ARRAY_Wraper/8",252189,2862.12,2811.96,ns,,2.84499e+06,"8",,
+"BM_ARRAY_Wraper/16",196688,3812.71,3743.51,ns,,4.27407e+06,"16",,
+"BM_ARRAY_Wraper/32",132563,5242.46,5105.44,ns,,6.26783e+06,"32",,
+"BM_ARRAY_Wraper/64",79378,8498.15,8325.08,ns,,7.68762e+06,"64",,
+"BM_ARRAY_Wraper/128",44018,14875.4,14551.2,ns,,8.79655e+06,"128",,
+"BM_ARRAY_Wraper/256",25197,29530.4,28975,ns,,8.83519e+06,"256",,
+"BM_ARRAY_Wraper/512",10000,53718.2,52518.2,ns,,9.749e+06,"512",,
+"BM_ARRAY_Wraper/1024",5993,101963,100700,ns,,1.01688e+07,"1024",,
+"BM_ARRAY_Wraper/2048",3276,215234,210422,ns,,9.73283e+06,"2048",,
+"BM_ARRAY_Wraper/4096",1541,429966,421529,ns,,9.71701e+06,"4096",,
+"BM_ARRAY_Wraper/8192",822,897143,872925,ns,,9.38455e+06,"8192",,
+"BM_ARRAY_Wraper/16384",381,1.66018e+06,1.62075e+06,ns,,1.01089e+07,"16384",,
+"BM_ARRAY_Wraper_BigO",,103.08,100.591,N,,,"1",,
+"BM_ARRAY_Wraper_RMS",,0.069,0.0663722,,,,"1",,

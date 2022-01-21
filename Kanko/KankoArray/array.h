@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #define MAXSIZE 100
-#define MAXVERSION 1000
+#define MAXVERSION 32768
 #define SENTINEL -1
 
 typedef struct arrayNode{
@@ -61,10 +61,6 @@ int modify (Array *arr, int version, int pos, int newVal){
 
 int retrieve(Array arr, int vers, int pos){
     arrayNode * temp = arr.list[pos];
-    if (pos == 100){
-        1 == 1;
-        int x = 1;
-    }
     while(temp->version > vers){    //future, relative to the requested version 
         temp = temp->next;
     }
