@@ -1,0 +1,3 @@
+g++ PP_STACK_ALL_OPR.cpp -std=c++11 -isystem benchmark/include \-Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
+./mybenchmark --benchmark_out="cons_push_pop_PM_PP_STACK.csv" --benchmark_out_format=csv
+

@@ -1,0 +1,19 @@
+2021-12-29T22:24:42+05:30
+Running ./mybenchmark
+Run on (8 X 1100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 512 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 1.85, 2.09, 2.24
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_IterationOverLL_Wraper/4",308350,2449.08,2382.6,ns,,1.67884e+06,"4",,
+"BM_IterationOverLL_Wraper/8",231751,3596.36,3477.71,ns,,2.30036e+06,"8",,
+"BM_IterationOverLL_Wraper/16",140560,5499.66,5353.71,ns,,2.98858e+06,"16",,
+"BM_IterationOverLL_Wraper/32",85610,8167.75,8037.34,ns,,3.98141e+06,"32",,
+"BM_IterationOverLL_Wraper/64",49253,15663.3,15532.2,ns,,4.12048e+06,"64",,
+"BM_IterationOverLL_Wraper/128",23619,33299.9,32383.3,ns,,3.95266e+06,"128",,
+"BM_IterationOverLL_Wraper/256",10816,66747.6,64997.6,ns,,3.93861e+06,"256",,
+"BM_IterationOverLL_Wraper_BigO",,130.128,126.801,N,,,"4",,
+"BM_IterationOverLL_Wraper_RMS",,0.0520078,0.0496712,,,,"4",,

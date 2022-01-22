@@ -1,0 +1,8 @@
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+BM_IterationOverLL_Wraper/4,308350,2449.08,2382.6,ns,,1.67884E+06,4,,
+BM_IterationOverLL_Wraper/8,231751,3596.36,3477.71,ns,,2.30036E+06,8,,
+BM_IterationOverLL_Wraper/16,140560,5499.66,5353.71,ns,,2.98858E+06,16,,
+BM_IterationOverLL_Wraper/32,85610,8167.75,8037.34,ns,,3.98141E+06,32,,
+BM_IterationOverLL_Wraper/64,49253,15663.3,15532.2,ns,,4.12048E+06,64,,
+BM_IterationOverLL_Wraper/128,23619,33299.9,32383.3,ns,,3.95266E+06,128,,
+BM_IterationOverLL_Wraper/256,10816,66747.6,64997.6,ns,,3.93861E+06,256,,

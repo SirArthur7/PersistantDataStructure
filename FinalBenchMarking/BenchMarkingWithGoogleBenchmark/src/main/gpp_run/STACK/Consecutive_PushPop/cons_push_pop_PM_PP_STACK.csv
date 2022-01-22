@@ -1,0 +1,18 @@
+2022-01-20T17:53:29+05:30
+Running ./mybenchmark
+Run on (8 X 1100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 512 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 1.55, 1.76, 1.85
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_STACK_Wraper/1",224291,3563.28,3354.6,ns,,298098,"1",,
+"BM_STACK_Wraper/2",200598,3797.52,3557.54,ns,,562186,"2",,
+"BM_STACK_Wraper/4",180395,4282.01,4030.77,ns,,992367,"4",,
+"BM_STACK_Wraper/8",124886,5271.82,4941.63,ns,,1.6189e+06,"8",,
+"BM_STACK_Wraper/16",109613,6732.87,6428.14,ns,,2.48905e+06,"16",,
+"BM_STACK_Wraper/32",71337,9920.67,9696.79,ns,,3.30006e+06,"32",,
+"BM_STACK_Wraper_BigO",,363.112,351.116,N,,,"1",,
+"BM_STACK_Wraper_RMS",,0.443989,0.430473,,,,"1",,

@@ -1,0 +1,23 @@
+2022-01-20T17:36:18+05:30
+Running ./mybenchmark
+Run on (8 X 1100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 512 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 2.36, 2.24, 2.18
+------------------------------------------------------------------------------
+Benchmark                    Time             CPU   Iterations UserCounters...
+------------------------------------------------------------------------------
+BM_STACK_Wraper/1         3005 ns         2808 ns       398581 items_per_second=356.175k/s 1
+BM_STACK_Wraper/2         3421 ns         3165 ns       230113 items_per_second=632.01k/s 2
+BM_STACK_Wraper/4         3857 ns         3646 ns       193725 items_per_second=1096.96k/s 4
+BM_STACK_Wraper/8         4943 ns         4655 ns       150942 items_per_second=1.71857M/s 8
+BM_STACK_Wraper/16        8841 ns         8383 ns        88505 items_per_second=1.90873M/s 16
+BM_STACK_Wraper/32       14951 ns        14650 ns        50708 items_per_second=2.18437M/s 32
+BM_STACK_Wraper/64       39301 ns        38272 ns        19315 items_per_second=1.67224M/s 64
+BM_STACK_Wraper/128      98804 ns        97968 ns         7421 items_per_second=1.30654M/s 128
+BM_STACK_Wraper/256     352118 ns       350722 ns         1840 items_per_second=729.922k/s 256
+BM_STACK_Wraper_BigO    1212.95 N       1206.65 N     1
+BM_STACK_Wraper_RMS         48 %            48 %     1

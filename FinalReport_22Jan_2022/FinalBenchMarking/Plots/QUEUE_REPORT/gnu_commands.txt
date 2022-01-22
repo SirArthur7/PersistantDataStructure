@@ -1,0 +1,1 @@
+ plot "Consecutive_PushPP.csv" using 1:2 with linespoints title 'Model: DAG With Statc Array', '' using 1:3 with linespoints title 'std::stack', '' using 1:4 with linespoints title 'Pointer Machine';

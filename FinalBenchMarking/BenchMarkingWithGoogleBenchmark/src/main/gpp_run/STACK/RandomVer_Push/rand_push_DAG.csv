@@ -1,0 +1,28 @@
+2022-01-20T15:15:06+05:30
+Running ./mybenchmark
+Run on (8 X 1100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 512 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 1.45, 2.04, 2.26
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_STACK_Wraper/1",456976,1471.05,1469.85,ns,,680340,"1",,
+"BM_STACK_Wraper/2",455566,1519.26,1519.32,ns,,1.31638e+06,"2",,
+"BM_STACK_Wraper/4",446272,1569.79,1569.96,ns,,2.54783e+06,"4",,
+"BM_STACK_Wraper/8",435402,1567.91,1568.48,ns,,5.10049e+06,"8",,
+"BM_STACK_Wraper/16",415610,1667.41,1669.11,ns,,9.58596e+06,"16",,
+"BM_STACK_Wraper/32",393845,1820.93,1822.56,ns,,1.75577e+07,"32",,
+"BM_STACK_Wraper/64",353335,2069.94,2070.17,ns,,3.09154e+07,"64",,
+"BM_STACK_Wraper/128",274440,2538.48,2538.91,ns,,5.04153e+07,"128",,
+"BM_STACK_Wraper/256",189811,3634.05,3632.82,ns,,7.04687e+07,"256",,
+"BM_STACK_Wraper/512",129776,5830.02,5824.66,ns,,8.79021e+07,"512",,
+"BM_STACK_Wraper/1024",66782,10071.6,10057.2,ns,,1.01817e+08,"1024",,
+"BM_STACK_Wraper/2048",37983,19035,19024.4,ns,,1.07651e+08,"2048",,
+"BM_STACK_Wraper/4096",19555,36303.4,36262.2,ns,,1.12955e+08,"4096",,
+"BM_STACK_Wraper/8192",10243,68641.5,68571.5,ns,,1.19467e+08,"8192",,
+"BM_STACK_Wraper/16384",5004,141611,141468,ns,,1.15814e+08,"16384",,
+"BM_STACK_Wraper/32768",2528,288113,288013,ns,,1.13773e+08,"32768",,
+"BM_STACK_Wraper_BigO",,8.74919,8.74471,N,,,"1",,
+"BM_STACK_Wraper_RMS",,0.0423478,0.0426729,,,,"1",,
