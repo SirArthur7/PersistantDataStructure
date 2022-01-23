@@ -1,0 +1,5 @@
+g++ FP_QUEUE_MAIN_ENQ.cpp -std=c++11 -isystem benchmark/include \-Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
+g++ FP_QUEUE_MAIN_DEQ.cpp -std=c++11 -isystem benchmark/include \-Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
+g++ FP_QUEUE_MAIN_ENQ_DEQ.cpp -std=c++11 -isystem benchmark/include \-Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
+
+./mybenchmark --benchmark_out="rand_enq_PP.csv" --benchmark_out_format=csv

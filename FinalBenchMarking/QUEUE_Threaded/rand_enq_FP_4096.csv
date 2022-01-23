@@ -1,0 +1,25 @@
+2022-01-23T12:28:25+05:30
+Running ./mybenchmark
+Run on (8 X 1100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 512 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 1.40, 1.98, 2.12
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_QUEUE_Wraper/1",46360,19629.4,19169.2,ns,,52167,"1",,
+"BM_QUEUE_Wraper/2",20668,32167.8,31566.2,ns,,63358.9,"2",,
+"BM_QUEUE_Wraper/4",12222,53111.5,52226.1,ns,,76590,"4",,
+"BM_QUEUE_Wraper/8",7158,93951.4,92851.4,ns,,86159.2,"8",,
+"BM_QUEUE_Wraper/16",4016,171014,169404,ns,,94448.6,"16",,
+"BM_QUEUE_Wraper/32",2236,312674,310172,ns,,103169,"32",,
+"BM_QUEUE_Wraper/64",1174,602828,599170,ns,,106815,"64",,
+"BM_QUEUE_Wraper/128",587,1.18095e+06,1.17135e+06,ns,,109276,"128",,
+"BM_QUEUE_Wraper/256",295,2.34433e+06,2.33137e+06,ns,,109807,"256",,
+"BM_QUEUE_Wraper/512",152,4.5985e+06,4.57907e+06,ns,,111813,"512",,
+"BM_QUEUE_Wraper/1024",71,9.09095e+06,9.05625e+06,ns,,113071,"1024",,
+"BM_QUEUE_Wraper/2048",38,1.95364e+07,1.93279e+07,ns,,105961,"2048",,
+"BM_QUEUE_Wraper/4096",16,4.03462e+07,3.95801e+07,ns,,103486,"4096",,
+"BM_QUEUE_Wraper_BigO",,9733.55,9571.93,N,,,"1",,
+"BM_QUEUE_Wraper_RMS",,0.0530445,0.0440579,,,,"1",,
