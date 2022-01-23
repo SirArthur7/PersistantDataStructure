@@ -110,8 +110,11 @@ void print_q_all(Queue *q)
             printf("Empty list");
         else
         {
+            printf("%d\t",q->ver[1][i]->data);
+            tmp2=NULL;
             while(tmp2!=q->ver[1][i])
             {   
+                printf("Montu\t");
                 printf("%d ",tmp1->data);
                 tmp2=tmp1;
                 tmp1=advance_ptr(tmp1,q->ver[1][i]);
